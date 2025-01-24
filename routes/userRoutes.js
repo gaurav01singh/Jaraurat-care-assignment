@@ -7,5 +7,8 @@ const router = express.Router();
 router.post("/register", registerUser);
 router.post("/login", loginUser);
 router.post("/forget-password",authenticateToken, forgotPassword);
+router.get("/protected", (req, res) => {
+    res.send("This is a protected route");
+  });
 
 export default router;
