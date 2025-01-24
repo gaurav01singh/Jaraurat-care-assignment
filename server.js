@@ -16,6 +16,9 @@ app.use("/api/resources", resourceRoutes);
 app.get("/",(req,res)=>{
     res.send("hello")
 })
+app.get("/test",(req,res)=>{
+    res.send("hello test")
+})
 
 const PORT = process.env.PORT || 8080;
 app.listen(PORT, () => console.log(`Server running on port http://localhost:${PORT}`));
