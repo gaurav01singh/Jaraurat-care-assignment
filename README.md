@@ -185,7 +185,7 @@ export const forgotPassword = async (req, res) => {
    ```env
    gor any HTTP clientMONGO_URI=<your-monngodb-uri>
    JW_SECRET=<your-secret-keny>
-   PORT=5000
+   PORT=8080
    ```
 
 4. Sart the server:
